@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Change to flex-start to align items at the top */
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  padding-top: 20px; /* Padding at the top */
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.running-screen{
+ align-items: left;
+}
+
+.setup-screen {
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width for larger screens */
+}
+
+.pose-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between pose levels */
+}
+
+.pose-level {
+  background-color: #3a3f47; /* Darker background for levels */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.pose-item {
+  padding: 10px 0;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Full-width buttons on mobile */
+}
+
+.button:hover {
+  background-color: #21a1f1; /* Darker blue on hover */
+}
+
+.timer-setup {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 60px; /* Fixed width for number input */
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Smaller font size on mobile */
+  }
+  
+  h2 {
+    font-size: 18px; /* Smaller font size on mobile */
+  }
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.level-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Makes it clear that this is clickable */
+}
+
+.level-number {
+  margin-left: 5px; /* Space between "Level" and the number */
+}
+
+.pose-list {
+  margin: 0; /* Remove margin for the pose list */
+  padding: 0; /* Remove padding for the pose list */
+  list-style: none; /* Remove default list style */
+}
